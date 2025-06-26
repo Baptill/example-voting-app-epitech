@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: vote-tls
+spec:
+  secretName: vote-tls
+  issuerRef:
+    name: letsencrypt
+    kind: ClusterIssuer
+  commonName: vote.muracci.me
+  dnsNames:
+  - vote.muracci.me
