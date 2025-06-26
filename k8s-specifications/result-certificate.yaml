@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: result-tls
+spec:
+  secretName: result-tls
+  issuerRef:
+    name: letsencrypt
+    kind: ClusterIssuer
+  commonName: result.muracci.me
+  dnsNames:
+  - result.muracci.me
