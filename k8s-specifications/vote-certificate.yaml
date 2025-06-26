@@ -7,6 +7,6 @@ spec:
   issuerRef:
     name: letsencrypt
     kind: ClusterIssuer
-  commonName: vote.muracci.me
+  #commonName: vote.muracci.me
   dnsNames:
   - vote.muracci.me
